@@ -148,6 +148,7 @@ html *, body * {
   border-bottom: 2px solid #fefefe;
   margin-bottom: 4px;
   text-decoration: none;
+  color: #fefefe;
 }
 
 #projects .project .text .title:visited {
