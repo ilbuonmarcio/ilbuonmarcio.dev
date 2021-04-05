@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@-webkit-keyframes arrow-oscillate {
+  0%, 100% {
+    bottom: 64px;
+  }
+  50% {
+    bottom: 54px;
+  }
+}
+@keyframes arrow-oscillate {
+  0%, 100% {
+    bottom: 64px;
+  }
+  50% {
+    bottom: 54px;
+  }
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #303030;
+  background-color: white;
+}
+
+html *, body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.profile {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile .image-wrapper {
+  border-radius: 50%;
+  width: 320px;
+  height: 320px;
+  -webkit-box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.profile .image-wrapper .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profile .description-wrapper {
+  text-align: center;
+}
+
+.profile .description-wrapper .name {
+  font-size: 3rem;
+  font-weight: 650;
+}
+
+.profile .description-wrapper a[href="#projects"] {
+  color: #fcfcfc;
+  padding: 4px;
+  background-color: cornflowerblue;
+  border-radius: 6px;
+}
+
+.profile .projects-arrow-wrapper {
+  position: absolute;
+  bottom: -64px;
+  left: calc(50vw - 48px);
+  -webkit-animation: arrow-oscillate 1s ease-in-out infinite;
+          animation: arrow-oscillate 1s ease-in-out infinite;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile .projects-arrow-wrapper .arrow-down {
+  max-width: 32px;
+}
+
+#projects {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: darkcyan;
+}
+/*# sourceMappingURL=index.css.map */
