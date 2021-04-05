@@ -2,10 +2,10 @@
 
 @keyframes arrow-oscillate {
     0%, 100% {
-      bottom: 64px;
+      bottom: 17vh;
     }
     50% {
-      bottom: 54px;
+      bottom: 16vh;
     }
   }
 
@@ -29,7 +29,9 @@ html, body {
 
 .profile {
     width: 100vw;
-    height: 100vh;
+    min-height: 85vh;
+
+    padding: 32px;
 
     display: flex;
     justify-content: center;
@@ -70,7 +72,7 @@ html, body {
 
     .projects-arrow-wrapper {  
         position: absolute;
-        bottom: -64px;
+        bottom: -15vh;
         left: calc(50vw - 48px);
 
         animation: arrow-oscillate 1s ease-in-out infinite;
@@ -87,7 +89,61 @@ html, body {
 }
 
 #projects {
-    min-height: 100vh;
     width: 100vw;
     background-color: darkcyan;
+
+    padding: 32px 96px;
+
+    .project {
+        .text {
+            color: #fefefe;
+            padding: 12px;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+
+            .title {
+                font-weight: 600;
+                font-size: 2rem;
+                text-align: left;
+
+                border-bottom: 2px solid #fefefe;
+                margin-bottom: 4px;
+
+                text-decoration: none;
+
+                &:visited {
+                    color: #fefefe;
+                }
+            }
+
+            .description {
+                font-weight: 350;
+                font-size: 1.2rem;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+#footer {
+    padding: 96px 128px 24px 128px;
+
+    color: #fefefe;
+
+    width: 100vw;
+    background-color: darken(darkcyan, 12.5%);
+
+    a, a:visited {
+        color: #fefefe;
+    }
+
+    .copyright {
+        text-align: center;
+        font-size: 12px;
+
+        padding: 128px 0 24px 0;
+    }
 }

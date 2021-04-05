@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
 @-webkit-keyframes arrow-oscillate {
   0%, 100% {
-    bottom: 64px;
+    bottom: 17vh;
   }
   50% {
-    bottom: 54px;
+    bottom: 16vh;
   }
 }
 @keyframes arrow-oscillate {
   0%, 100% {
-    bottom: 64px;
+    bottom: 17vh;
   }
   50% {
-    bottom: 54px;
+    bottom: 16vh;
   }
 }
 
@@ -33,7 +33,8 @@ html *, body * {
 
 .profile {
   width: 100vw;
-  height: 100vh;
+  min-height: 85vh;
+  padding: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +82,7 @@ html *, body * {
 
 .profile .projects-arrow-wrapper {
   position: absolute;
-  bottom: -64px;
+  bottom: -15vh;
   left: calc(50vw - 48px);
   -webkit-animation: arrow-oscillate 1s ease-in-out infinite;
           animation: arrow-oscillate 1s ease-in-out infinite;
@@ -105,8 +106,62 @@ html *, body * {
 }
 
 #projects {
-  min-height: 100vh;
   width: 100vw;
   background-color: darkcyan;
+  padding: 32px 96px;
+}
+
+#projects .project .text {
+  color: #fefefe;
+  padding: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects .project .text .title {
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: left;
+  border-bottom: 2px solid #fefefe;
+  margin-bottom: 4px;
+  text-decoration: none;
+}
+
+#projects .project .text .title:visited {
+  color: #fefefe;
+}
+
+#projects .project .text .description {
+  font-weight: 350;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+#footer {
+  padding: 96px 128px 24px 128px;
+  color: #fefefe;
+  width: 100vw;
+  background-color: #004b4b;
+}
+
+#footer a, #footer a:visited {
+  color: #fefefe;
+}
+
+#footer .copyright {
+  text-align: center;
+  font-size: 12px;
+  padding: 128px 0 24px 0;
 }
 /*# sourceMappingURL=index.css.map */
