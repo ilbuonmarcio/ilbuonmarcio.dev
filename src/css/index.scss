@@ -92,6 +92,32 @@ html, body {
     }
 }
 
+.tecnologies {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 860px) {
+        flex-direction: column;
+    }
+
+    margin-left: 20vw;
+    margin-right: 20vw;
+    
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+
+    .tecnology {
+        padding: 24px;
+
+        img {
+            height: 240px;
+            max-width: 90%;
+        }
+    }
+}
+
 #projects {
     width: 100vw;
     background-color: darkcyan;
