@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
 
+$red: #EE6352;
+$green: #59CD90;
+$blue: #3FA7D6;
+$yellow: #FAC05E;
+$orange: #F79D84;
+$purple: #A14EBF;
+$black: #02010A;
+$grey: #041B15;
+$white: #f9fff8;
+
 @keyframes arrow-oscillate {
     0%, 100% {
       bottom: 17vh;
@@ -23,171 +33,132 @@ html, body {
     text-rendering: optimizeLegibility;
     font-family: 'Didact Gothic', sans-serif;
 
-    color: #303030;
-    background-color: white;
+    color: $black;
+    background-color: $white;
 }
 
-.profile {
-    width: 100vw;
-    min-height: 90vh;
-
-    padding: 32px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    .image-wrapper {
-        border-radius: 50%;
-        width: 320px;
-        max-width: 100%;
-        box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.12);
-
-        .image {
-            width: 100%;
-            height: 100%;
-
-            border-radius: 50%;
-        }
+nav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 900px) {
+        grid-template-columns: 1fr;           
     }
 
-    .description-wrapper {
+    a {
+        padding: 28px 12px;
+
+        font-size: 20px;
         text-align: center;
-
-        .name {
-            font-size: 3rem;
-            font-weight: 650;
-        }
-
-        .sub {}
-
-        a[href="#projects"] {
-            color: #fcfcfc;
-            padding: 4px;
-            background-color: cornflowerblue;
-            border-radius: 6px;
-        }
-    }
-
-    .projects-arrow-wrapper {  
-        position: absolute;
-        bottom: -15vh;
-        left: calc(50vw - 48px);
-
-        @media screen and (max-width: 500px) {
-            display: none;
-        }
-
-        animation: arrow-oscillate 1s ease-in-out infinite;
 
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
 
-        .arrow-down {
-            max-width: 32px;
+        color: $white;
+
+        &.home {
+            font-size: 32px;
+            color: $black;
+            background-color: $white; border-bottom: 4px solid darken(#ffffff, 20%);
+        }
+
+        &.section {
+            &:nth-child(2) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
+            &:nth-child(3) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
+            &:nth-child(4) { background-color: $blue; border-bottom: 4px solid darken($blue, 20%); }
+            &:nth-child(5) { background-color: $purple; border-bottom: 4px solid darken($purple, 20%); }
+            &:nth-child(6) { background-color: $yellow; border-bottom: 4px solid darken($yellow, 20%); }
+
+            @media screen and (max-width: 900px) {
+                display: none;                
+            }
         }
     }
 }
 
-.tecnologies {
-    display: flex;
+div#profile {
+    width: 100%;
+    height: 65vh;
 
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    @media screen and (max-width: 860px) {
-        flex-direction: column;
-    }
+    img {
+        height: 80%;
+        border-radius: 10px;
 
-    margin-left: 20vw;
-    margin-right: 20vw;
-    
-    margin-top: 10vh;
-    margin-bottom: 15vh;
-
-    .tecnology {
-        padding: 24px;
-
-        img {
-            height: 240px;
-            max-width: 90%;
-        }
+        margin-left: 12px;
+        margin-right: 12px;
     }
 }
 
-#projects {
-    width: 100vw;
-    background-color: darkcyan;
-
-    padding: 32px 96px;
-
-    @media screen and (max-width: 500px) {
-        padding: 32px 32px;
-    }
-
-    .project {
-        .text {
-            color: #fefefe;
-            padding: 12px;
-
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            flex-direction: column;
-
-            .title {
-                font-weight: 600;
-                font-size: 2rem;
-                text-align: left;
-
-                border-bottom: 2px solid #fefefe;
-                margin-bottom: 4px;
-
-                text-decoration: none;
-
-                color: #fefefe;
-
-                &:visited {
-                    color: #fefefe;
-                }
-            }
-
-            .description {
-                font-weight: 350;
-                font-size: 1.2rem;
-                text-align: justify;
-            }
-        }
-    }
+a {
+    text-decoration: none;
+    color: unset;
 }
 
-#footer {
-    padding: 96px 128px 24px 128px;
+div#info {
+    background-color: darken($orange, 14%);
+    padding: 32px 32px 48px 32px;
+    color: $white;
+    margin-bottom: 32px;
 
-    @media screen and (max-width: 500px) {
-        padding: 60px 32px 24px 32px;
-    }
-
-    color: #fefefe;
-
-    width: 100vw;
-    background-color: darken(darkcyan, 12.5%);
-
-    a, a:visited {
-        color: #fefefe;
-    }
-
-    .copyright {
+    #hello {
+        font-size: 5rem;
         text-align: center;
-        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 12px;
+    }
 
-        padding: 128px 0 24px 0;
+    #desc {
+        font-size: 24px;
+        text-align: center;
 
-        @media screen and (max-width: 500px) {
-            padding: 48px 0 24px 0;
+        .highlight {
+            font-weight: 600;
+            color: lighten($orange, 8%);
         }
     }
+}
+
+div#solutions {
+    padding: 12px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .solution {
+        min-height: 320px;
+        margin: 10px;
+        border-radius: 3px;
+        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
+        color: $white;
+
+        &:nth-child(1) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
+        &:nth-child(2) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
+        &:nth-child(3) { background-color: $blue; border-bottom: 4px solid darken($blue, 20%); }
+        &:nth-child(4) { background-color: $purple; border-bottom: 4px solid darken($purple, 20%); }
+        &:nth-child(5) { background-color: $yellow; border-bottom: 4px solid darken($yellow, 20%); }
+
+        .title {
+            font-size: 2.2rem;
+            padding: 12px 20px;
+        }
+
+        .desc {
+            padding: 12px 20px;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 32px 12px 128px 12px;
+
+    text-align: center;
 }

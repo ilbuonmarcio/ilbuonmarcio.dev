@@ -8,122 +8,57 @@
         <link rel="stylesheet" type="text/css" href="css/index.css"/>
     </head>
     <body>
-        <div class="profile">
-            <div class="image-wrapper">
-                <img class="image" src="img/profilepic.jpg"/>
-            </div>
-            <div class="description-wrapper">
-                <div class="name">Alessandro Marchioro</div>
-                <div class="sub">Software Developer, Pythonista, Creative Mind</div>
-            </div>
+        <nav>
+            <a href="/" class="home">Alessandro Marchioro</a>
+            <a href="#solution-soluzioni-dedicate"  class="section">Soluzioni Dedicate</a>
+            <a href="#solution-automazione-industriale" class="section">Automazione Industriale</a>
+            <a href="#solution-server-cloud-iot" class="section">Server, Cloud & IoT</a>
+            <a href="#solution-workstation-gaming-pc" class="section">Workstation & Gaming PC</a>
+            <a href="#solution-crypto-autotrading" class="section">Crypto AutoTrading</a>
+        </nav>
 
-            <div class="projects-arrow-wrapper">
-                My Portfolio
-                <a href="#projects"><img class="arrow-down" src="img/arrow-down.svg"/></a>
+        <div id="profile">
+            <img src="img/me.jpg"/>
+            <img src="img/verona.jpg"/>
+            <img src="img/coding.jpg"/>
+            <img src="img/automation.jpg"/>
+        </div>
+
+        <div id="info">
+            <div id="hello">Heyla!</div>
+            <div id="desc">
+                Sono <span class="highlight">Alessandro Marchioro</span>, un <span class="highlight">Freelance Software Developer</span> di Verona!<br>
+                In questa pagina potete trovare tutte le informazioni riguardo ai servizi e consulenza che effettuo per aziende e privati.<br><br>
+                Se ti va di contattarmi, scrivimi pure su <span class="highlight"><a href="https://t.me/ilbuonmarcio">Telegram</a> (@ilbuonmarcio)</span> o via <span class="highlight"><a href="mailto:alessandro.marchioro1998@gmail.com">email</a> (alessandro.marchioro1998@gmail.com)</span> :)
             </div>
         </div>
 
-        <div class="tecnologies">
-            <div class="tecnology">
-                <img src="img/python.svg"/>
+        <div id="solutions">
+            <div class="solution" id="solution-soluzioni-dedicate" style="grid-column-start: 1; grid-column-end: 3;">
+                <div class="title">Soluzioni Dedicate</div>
+                <div class="desc">TBA</div>
             </div>
-            <div class="tecnology">
-                <img src="img/podman.svg"/>
+            <div class="solution" id="solution-automazione-industriale" style="grid-column-start: 1; grid-column-end: 3;">
+                <div class="title">Automazione Industriale</div>
+                <div class="desc">TBA</div>
             </div>
-            <div class="tecnology">
-                <img src="img/laravel.svg"/>
+            <div class="solution" id="solution-server-cloud-iot">
+                <div class="title">Server, Cloud & IoT</div>
+                <div class="desc">TBA</div>
             </div>
-            <div class="tecnology">
-                <img src="img/sass.svg"/>
+            <div class="solution" id="solution-workstation-gaming-pc">
+                <div class="title">Workstation & Gaming PC</div>
+                <div class="desc">TBA</div>
             </div>
-        </div>
-
-        <div id="projects">
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://github.com/ilbuonmarcio/lydia">lydia</a>
-                    <div class="description">
-                        a featureful, yet simple Arch Linux install script<br>
-                        lydia is my simple Arch Linux installation script.
-                        It's easy to edit, configure and use, has UEFI-only boot support and provides automatic disk partitioning and a sane set of tools to work with.
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://play.google.com/store/apps/details?id=dev.ilbuonmarcio.secureq">SecureQ</a>
-                    <div class="description">
-                        Secureq - faster, safer queues for your business<br>
-                        Manage and automate the booking process, timetable and better organize your work schedule
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://github.com/ilbuonmarcio/cc">CC</a>
-                    <div class="description">
-                        CC - Class Compisition's gestionnelle<br>
-                        cc is a software useful for schools that replaces manual class compositions. It's an evolution of marconicc, providing a simple single-page application to let schools efficiently provide classes at the right time.
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://github.com/ilbuonmarcio/warp">warp</a>
-                    <div class="description">
-                        warp - temporary, yet secure file sharing<br>
-                        warp is a temporary file sharing platform which enables you to share small to medium files with your friends and colleagues with a simple drag-and-drop-and-copy-url operation
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://github.com/ilbuonmarcio/unipd-video-manager">UniPD Video Manager</a>
-                    <div class="description">
-                        eLearning platform video manager and downloader for offline or low-bandwith consumption
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://kartellini.ilbuonmarcio.dev">Kartellini</a>
-                    <div class="description">
-                        manage your employees's timetables and check-in-and-out for better time management and payroll
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://blog.ilbuonmarcio.dev">blog</a>
-                    <div class="description">
-                        my personal blog site, in which I share some tip, tricks and funny stories
-                    </div>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="text">
-                    <a class="title" href="https://github.com/ilbuonmarcio/mrcz-a8">mrcz-a8</a>
-                    <div class="description">
-                        mrcz's Anet A8 custom build config, with auto-Z 9-point calibration and other enhancements
-                    </div>
-                </div>
+            <div class="solution" id="solution-crypto-autotrading" style="grid-column-start: 1; grid-column-end: 3;">
+                <div class="title">Crypto AutoTrading</div>
+                <div class="desc">TBA</div>
             </div>
         </div>
 
-        <footer id="footer">
-            <div>email: <a href="mailto:alessandro.marchioro1998@gmail.com">alessandro.marchioro1998@gmail.com</a></div>
-            <div>github: <a href="https://github.com/ilbuonmarcio">@ilbuonmarcio</a></div>
-            <div>youtube: <a href="https://www.youtube.com/channel/UCOKYfyzkgpAZlJyHqLZlNLQ">ilbuonmarcio</a></div>
-            <div>telegram: <a href="https://t.me/ilbuonmarcio">@ilbuonmarcio</a></div>
-
-            <div class="copyright">copyright 2021 ilbuonmarcio, all rights reserved | for business requests, please ask via mail</div>
+        <footer>
+            <div>email/github/youtube/telegram: @ilbuonmarcio</div>
+            <div class="copyright">copyright 2021 Alessandro Marchioro, all rights reserved | for business requests, please ask via mail</div>
         </footer>
     </body>
 </html>
