@@ -83,6 +83,7 @@ div#profile {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 
     img {
         height: 80%;
@@ -90,6 +91,19 @@ div#profile {
 
         margin-left: 12px;
         margin-right: 12px;
+        
+        @media screen and (max-width: 900px) {    
+            &:nth-child(2) { display: none; }
+            &:nth-child(3) { display: none; }
+            &:nth-child(4) { display: none; }
+        }
+        @media screen and (max-width: 1200px) {    
+            &:nth-child(2) { display: none; }
+            &:nth-child(3) { display: none; }
+        }
+        @media screen and (max-width: 1540px) {    
+            &:nth-child(2) { display: none; }
+        }
     }
 }
 
@@ -119,6 +133,7 @@ div#info {
         .highlight {
             font-weight: 600;
             color: lighten($orange, 8%);
+            word-wrap: break-word;
         }
     }
 }
@@ -127,7 +142,8 @@ div#solutions {
     padding: 12px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    
+    grid-template-columns: 1fr;
 
     .solution {
         min-height: 320px;
