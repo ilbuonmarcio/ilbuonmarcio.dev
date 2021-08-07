@@ -146,11 +146,11 @@ div#solutions {
     grid-template-columns: 1fr;
 
     .solution {
-        min-height: 320px;
         margin: 10px;
         border-radius: 3px;
         box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
         color: $white;
+        padding-bottom: 10px;
 
         &:nth-child(1) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
         &:nth-child(2) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
@@ -165,6 +165,7 @@ div#solutions {
 
         .desc {
             padding: 12px 20px;
+            font-size: 22px;
         }
     }
 }
