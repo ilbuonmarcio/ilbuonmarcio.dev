@@ -53,6 +53,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
 
         color: $white;
 
@@ -62,7 +63,7 @@ nav {
             background-color: $white; border-bottom: 4px solid darken(#ffffff, 20%);
         }
 
-        &.section {
+        &.section {            
             &:nth-child(2) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
             &:nth-child(3) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
             &:nth-child(4) { background-color: $blue; border-bottom: 4px solid darken($blue, 20%); }
@@ -86,8 +87,10 @@ div#profile {
     flex-wrap: wrap;
 
     img {
+        // clip-path: polygon(95% 0, 100% 95%, 5% 100%, 0 5%);
+
         height: 80%;
-        border-radius: 10px;
+        border-radius: 3px;
 
         margin-left: 12px;
         margin-right: 12px;
@@ -178,4 +181,10 @@ footer {
     padding: 32px 12px 128px 12px;
 
     text-align: center;
+
+    .copyright {
+        margin-top: 12px;
+        opacity: 0.65;
+        font-size: 11px;
+    }
 }

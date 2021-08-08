@@ -58,6 +58,10 @@ nav a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   color: #f9fff8;
 }
 
@@ -117,7 +121,7 @@ div#profile {
 
 div#profile img {
   height: 80%;
-  border-radius: 10px;
+  border-radius: 3px;
   margin-left: 12px;
   margin-right: 12px;
 }
@@ -248,5 +252,11 @@ footer {
           flex-direction: column;
   padding: 32px 12px 128px 12px;
   text-align: center;
+}
+
+footer .copyright {
+  margin-top: 12px;
+  opacity: 0.65;
+  font-size: 11px;
 }
 /*# sourceMappingURL=index.css.map */
