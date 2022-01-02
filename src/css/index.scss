@@ -116,7 +116,7 @@ a {
 }
 
 div#info {
-    background-color: darken($orange, 14%);
+    background-color: lighten($purple, 35%);
     color: $white;
     margin-bottom: 32px;
 
@@ -129,13 +129,21 @@ div#info {
     clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 72px), 50% 100%, 0% calc(100% - 72px), 0% 0%);
 
     div {
+        color: $grey;
+        
         padding: 32px 32px 48px 32px;
         #hello {
-            font-size: 12vw;
+            font-size: 11vw;
             text-align: center;
             padding: 0;
             margin: 0;
             margin-bottom: 12px;
+
+            .highlight {
+                font-weight: 600;
+                color: lighten($purple, 8%);
+                word-wrap: break-word;
+            }
         }
     
         #desc {
@@ -144,7 +152,7 @@ div#info {
     
             .highlight {
                 font-weight: 600;
-                color: lighten($orange, 8%);
+                color: lighten($purple, 8%);
                 word-wrap: break-word;
             }
         }
