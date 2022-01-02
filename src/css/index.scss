@@ -120,14 +120,15 @@ div#info {
     color: $white;
     margin-bottom: 32px;
 
-    min-height: 80vh;
+    min-height: 90vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 72px), 50% 100%, 0% calc(100% - 72px), 0% 0%);
+    // clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 72px), 50% 100%, 0% calc(100% - 72px), 0% 0%);
 
+    padding: 12px 12px 96px 12px;
     div {
         color: $grey;
 
@@ -162,13 +163,10 @@ div#info {
 div#solutions {
     padding: 12px;
 
-    display: grid;
-    
-    grid-template-columns: 1fr;
-
-    @media screen and (min-width: 900px) {
-        grid-template-columns: 1fr 1fr;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     .solution {
         margin: 10px;
@@ -177,11 +175,20 @@ div#solutions {
         color: $white;
         padding-bottom: 10px;
 
+        width: 100%;
+
         &:nth-child(1) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
         &:nth-child(2) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
         &:nth-child(3) { background-color: $blue; border-bottom: 4px solid darken($blue, 20%); }
         &:nth-child(4) { background-color: $purple; border-bottom: 4px solid darken($purple, 20%); }
-        &:nth-child(5) { background-color: $yellow; border-bottom: 4px solid darken($yellow, 20%); }
+
+        @media screen and (min-width: 900px) {
+            &:nth-child(1) { width: 66vw; margin-left: 25vw; }
+            &:nth-child(2) { width: 50vw; margin-right: 33vw; }
+            &:nth-child(3) { width: 75vw; margin-left: 11vw; }
+            &:nth-child(4) { width: 33vw; margin-right: 60vw; }
+            margin: 32px;
+        }
 
         .title {
             font-size: 2.2rem;
