@@ -195,20 +195,20 @@ div#solutions .solution:nth-child(4) {
     margin: 32px;
   }
   div#solutions .solution:nth-child(1) {
-    width: 66vw;
-    margin-left: 25vw;
+    width: 47vw;
+    margin-left: 28vw;
   }
   div#solutions .solution:nth-child(2) {
     width: 50vw;
     margin-right: 33vw;
   }
   div#solutions .solution:nth-child(3) {
-    width: 75vw;
-    margin-left: 11vw;
+    width: 55vw;
+    margin-left: 0vw;
   }
   div#solutions .solution:nth-child(4) {
     width: 33vw;
-    margin-right: 60vw;
+    margin-left: 35vw;
   }
 }
 div#solutions .solution .title {
