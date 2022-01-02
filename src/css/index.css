@@ -136,14 +136,14 @@ div#info {
 }
 div#info div {
   color: #041B15;
-  padding: 32px 32px 48px 32px;
 }
 div#info div #hello {
-  font-size: 11vw;
+  font-size: 100px;
   text-align: center;
-  padding: 0;
+  padding: 12px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-top: 96px;
+  margin-bottom: 102px;
 }
 div#info div #hello .highlight {
   font-weight: 600;
