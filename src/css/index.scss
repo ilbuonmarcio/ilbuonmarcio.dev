@@ -132,13 +132,27 @@ div#info {
     div {
         color: $grey;
 
+        padding: 12px;
+        margin: 12px;
+
         #hello {
-            font-size: 100px;
             text-align: center;
             padding: 12px;
             margin: 0;
             margin-top: 96px;
             margin-bottom: 102px;
+
+            @media screen and (max-width: 480px) {
+                font-size: 32px;
+            }
+
+            @media screen and (min-width: 481px) {
+                font-size: 48px;
+            }
+
+            @media screen and (min-width: 900px) {
+                font-size: 64px;
+            }
 
             .highlight {
                 font-weight: 600;
@@ -148,8 +162,12 @@ div#info {
         }
     
         #desc {
-            font-size: 24px;
+            font-size: 20px;
             text-align: center;
+
+            display: inline-block;
+
+            padding: 12px;
     
             .highlight {
                 font-weight: 600;

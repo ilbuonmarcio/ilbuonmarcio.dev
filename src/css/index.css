@@ -135,14 +135,30 @@ div#info {
 }
 div#info div {
   color: #041B15;
+  padding: 12px;
+  margin: 12px;
 }
 div#info div #hello {
-  font-size: 100px;
   text-align: center;
   padding: 12px;
   margin: 0;
   margin-top: 96px;
   margin-bottom: 102px;
+}
+@media screen and (max-width: 480px) {
+  div#info div #hello {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 481px) {
+  div#info div #hello {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 900px) {
+  div#info div #hello {
+    font-size: 64px;
+  }
 }
 div#info div #hello .highlight {
   font-weight: 600;
@@ -150,8 +166,10 @@ div#info div #hello .highlight {
   word-wrap: break-word;
 }
 div#info div #desc {
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
+  display: inline-block;
+  padding: 12px;
 }
 div#info div #desc .highlight {
   font-weight: 600;
