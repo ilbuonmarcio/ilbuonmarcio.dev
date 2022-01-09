@@ -116,11 +116,11 @@ a {
 }
 
 div#info {
-    background-color: lighten($purple, 35%);
+    background-color: lighten($blue, 35%);
     color: $white;
     margin-bottom: 32px;
 
-    min-height: 90vh;
+    min-height: 65vh;
 
     display: flex;
     justify-content: center;
@@ -128,7 +128,7 @@ div#info {
 
     // clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 72px), 50% 100%, 0% calc(100% - 72px), 0% 0%);
 
-    padding: 12px 12px 96px 12px;
+    padding: 12px 12px 12px 12px;
     div {
         color: $grey;
 
@@ -156,7 +156,7 @@ div#info {
 
             .highlight {
                 font-weight: 600;
-                color: lighten($purple, 8%);
+                color: lighten($blue, 8%);
                 word-wrap: break-word;
             }
         }
@@ -171,7 +171,7 @@ div#info {
     
             .highlight {
                 font-weight: 600;
-                color: lighten($purple, 8%);
+                color: lighten($blue, 8%);
                 word-wrap: break-word;
             }
         }
@@ -216,6 +216,24 @@ div#solutions {
         .desc {
             padding: 12px 20px;
             font-size: 22px;
+        }
+    }
+}
+
+div#social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+
+    a {
+        padding-left: 6px;
+        padding-right: 6px;
+
+        color: $blue;
+
+        svg {
+            height: 20px;
         }
     }
 }

@@ -124,14 +124,14 @@ a {
 }
 
 div#info {
-  background-color: #e7d1ee;
+  background-color: #d2eaf5;
   color: #f9fff8;
   margin-bottom: 32px;
-  min-height: 90vh;
+  min-height: 65vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px 12px 96px 12px;
+  padding: 12px 12px 12px 12px;
 }
 div#info div {
   color: #041B15;
@@ -162,7 +162,7 @@ div#info div #hello {
 }
 div#info div #hello .highlight {
   font-weight: 600;
-  color: #b16cca;
+  color: #61b6dd;
   word-wrap: break-word;
 }
 div#info div #desc {
@@ -173,7 +173,7 @@ div#info div #desc {
 }
 div#info div #desc .highlight {
   font-weight: 600;
-  color: #b16cca;
+  color: #61b6dd;
   word-wrap: break-word;
 }
 
@@ -236,6 +236,21 @@ div#solutions .solution .title {
 div#solutions .solution .desc {
   padding: 12px 20px;
   font-size: 22px;
+}
+
+div#social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+div#social-icons a {
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #3FA7D6;
+}
+div#social-icons a svg {
+  height: 20px;
 }
 
 footer {
