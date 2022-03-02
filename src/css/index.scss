@@ -10,15 +10,6 @@ $black: #02010A;
 $grey: #041B15;
 $white: #f9fff8;
 
-@keyframes arrow-oscillate {
-    0%, 100% {
-      bottom: 17vh;
-    }
-    50% {
-      bottom: 16vh;
-    }
-  }
-
 html, body {
     padding: 0;
     margin: 0;
@@ -37,186 +28,48 @@ html, body {
     background-color: $white;
 }
 
-nav {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    @media screen and (max-width: 900px) {
-        grid-template-columns: 1fr;           
-    }
-
-    a {
-        padding: 28px 12px;
-
-        font-size: 20px;
-        text-align: center;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        color: $white;
-
-        &.home {
-            font-size: 32px;
-            color: $black;
-            background-color: $white; border-bottom: 4px solid darken(#ffffff, 20%);
-        }
-
-        &.section {            
-            &:nth-child(2) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
-            &:nth-child(3) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
-            &:nth-child(4) { background-color: $blue; border-bottom: 4px solid darken($blue, 20%); }
-            &:nth-child(5) { background-color: $purple; border-bottom: 4px solid darken($purple, 20%); }
-            &:nth-child(6) { background-color: $yellow; border-bottom: 4px solid darken($yellow, 20%); }
-
-            @media screen and (max-width: 900px) {
-                display: none;                
-            }
-        }
-    }
-}
-
-div#profile {
-    width: 100%;
-    height: 65vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    img {
-        // clip-path: polygon(95% 0, 100% 95%, 5% 100%, 0 5%);
-
-        height: 40vh;
-        border-radius: 3px;
-
-        margin-left: 1vw;
-        margin-right: 1vw;
-        
-        @media screen and (max-width: 900px) {    
-            &:nth-child(2) { display: none; }
-            &:nth-child(3) { display: none; }
-            &:nth-child(4) { display: none; }
-        }
-        @media screen and (max-width: 1200px) {    
-            &:nth-child(2) { display: none; }
-            &:nth-child(3) { display: none; }
-        }
-        @media screen and (max-width: 1540px) {    
-            &:nth-child(2) { display: none; }
-        }
-    }
-}
-
 a {
     text-decoration: none;
     color: unset;
 }
 
 div#info {
-    background-color: lighten($blue, 35%);
+    background-color: lighten($purple, 10%);
     color: $white;
-    margin-bottom: 32px;
-
-    min-height: 65vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    // clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 72px), 50% 100%, 0% calc(100% - 72px), 0% 0%);
-
-    padding: 12px 12px 12px 12px;
-    div {
-        color: $grey;
-
-        padding: 12px;
-        margin: 12px;
-
-        #hello {
-            text-align: center;
-            padding: 12px;
-            margin: 0;
-            margin-top: 96px;
-            margin-bottom: 102px;
-
-            @media screen and (max-width: 480px) {
-                font-size: 32px;
-            }
-
-            @media screen and (min-width: 481px) {
-                font-size: 48px;
-            }
-
-            @media screen and (min-width: 900px) {
-                font-size: 64px;
-            }
-
-            .highlight {
-                font-weight: 600;
-                color: lighten($blue, 8%);
-                word-wrap: break-word;
-            }
-        }
-    
-        #desc {
-            font-size: 20px;
-            text-align: center;
-
-            display: inline-block;
-
-            padding: 12px;
-    
-            .highlight {
-                font-weight: 600;
-                color: lighten($blue, 8%);
-                word-wrap: break-word;
-            }
-        }
-    }    
-}
-
-div#solutions {
-    padding: 12px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    .solution {
-        margin: 10px;
-        border-radius: 3px;
-        box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.2);
-        color: $white;
-        padding-bottom: 10px;
+    #hero-img {
+        margin-top: 96px;
+        border-radius: 5px;
+        height: 480px;
+    }
 
-        width: 100%;
+    #hero {
+        font-size: 5rem;
+        padding: 32px 32px 0px 32px;
+    }
 
-        &:nth-child(1) { background-color: $red; border-bottom: 4px solid darken($red, 20%); }
-        &:nth-child(2) { background-color: $green; border-bottom: 4px solid darken($green, 20%); }
-        &:nth-child(3) { background-color: $blue; border-bottom: 4px solid darken($blue, 20%); }
-        &:nth-child(4) { background-color: $purple; border-bottom: 4px solid darken($purple, 20%); }
+    #hero-sub {
+        padding: 0px 0px 64px 0px;
+    }
 
-        @media screen and (min-width: 900px) {
-            &:nth-child(1) { width: 47vw; margin-left: 28vw; }
-            &:nth-child(2) { width: 50vw; margin-right: 33vw; }
-            &:nth-child(3) { width: 55vw; margin-left: 0vw; }
-            &:nth-child(4) { width: 33vw; margin-left: 35vw; }
-            margin: 32px;
-        }
+    padding: 12px 12px 12px 12px;
+}
 
-        .title {
-            font-size: 2.2rem;
-            padding: 12px 20px;
-        }
+div#activities {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-        .desc {
-            padding: 12px 20px;
-            font-size: 22px;
-        }
+    div {
+        padding: 48px 32px 128px 32px;
+    
+        min-width: 40vw;
     }
 }
 
@@ -230,7 +83,7 @@ div#social-icons {
         padding-left: 6px;
         padding-right: 6px;
 
-        color: $blue;
+        color: lighten($purple, 10%);
 
         svg {
             height: 20px;
