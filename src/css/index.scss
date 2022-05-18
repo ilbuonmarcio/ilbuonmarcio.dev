@@ -46,15 +46,29 @@ div#info {
         margin-top: 96px;
         border-radius: 5px;
         height: 480px;
+        max-width: 90vw;
+
+        @media screen and (max-width: 720px) {
+            margin-top: 24px;
+            height: 240px;
+        }
     }
 
     #hero {
         font-size: 5rem;
         padding: 32px 32px 0px 32px;
+        text-align: center;
+        line-height: 3rem;
+
+        @media screen and (max-width: 720px) {
+            font-size: 3rem;
+            padding: 24px 24px 0px 24px;
+        }
     }
 
     #hero-sub {
-        padding: 0px 0px 64px 0px;
+        padding: 20px 0px 64px 0px;
+        text-align: center;
     }
 
     padding: 12px 12px 12px 12px;
